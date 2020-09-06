@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'com.intuit.karate:karate-junit4:0.9.6'
+    testImplementation 'com.intuit.karate:karate-apache:0.9.6'
+    testImplementation "net.masterthought:cucumber-reporting:3.8.0"
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}
+
+test {
+    systemProperty "karate.options", System.properties.getProperty("karate.options")
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+    testLogging {
+        outputs.upToDateWhen { false }
+        showStandardStreams = true
+    }
+}
