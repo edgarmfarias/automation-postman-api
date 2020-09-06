@@ -1,5 +1,8 @@
 ## Automation Postman API
 
+[![GitHub license](https://img.shields.io/github/license/edgarfarias/automation-postman-api?style=flat-square)](https://github.com/edgarfarias/automation-postman-api/blob/master/LICENSE) ![GitHub last commit](https://img.shields.io/github/last-commit/edgarfarias/automation-postman-api?style=flat-square)
+
+
 This project has been created as a part of the QA Yalo challenge and its purpose is to automate the API testing of the Postman API.
 
 The test plan can be found [here](https://docs.google.com/document/d/1Ou-1JZlrWx6WJ-L29_sXmF_nPpM8houTU3zPHOSHuWE/edit?usp=sharing) 
