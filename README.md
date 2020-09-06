@@ -1,8 +1,7 @@
 ## Automation Postman API
 
-[![GitHub license](https://img.shields.io/github/license/edgarfarias/automation-postman-api?style=flat-square)](https://github.com/edgarfarias/automation-postman-api/blob/master/LICENSE) ![GitHub last commit](https://img.shields.io/github/last-commit/edgarfarias/automation-postman-api?style=flat-square)
-
-
+[![GitHub license](https://img.shields.io/github/license/edgarfarias/automation-postman-api?style=flat-square)](https://github.com/edgarfarias/automation-postman-api/blob/master/LICENSE) ![GitHub last commit](https://img.shields.io/github/last-commit/edgarfarias/automation-postman-api?style=flat-square)  
+   
 This project has been created as a part of the QA Yalo challenge and its purpose is to automate the API testing of the Postman API.
 
 The test plan can be found [here](https://docs.google.com/document/d/1Ou-1JZlrWx6WJ-L29_sXmF_nPpM8houTU3zPHOSHuWE/edit?usp=sharing) 
@@ -77,4 +76,17 @@ An specific subset of scenarios can be run by adding a custom tag to them and th
 `./gradlew test -Dkarate.options="--tags @customTagA --tags ~@customTagB"`
 
 ### Rationale for choosing KarateDSL
-The reasons about why Java and Karate were chosen for this project are explained in the [test plan](https://docs.google.com/document/d/1Ou-1JZlrWx6WJ-L29_sXmF_nPpM8houTU3zPHOSHuWE/edit?usp=sharing), section "APPENDIX: Automation tools assessment" 
+The reasons about why Java and Karate were chosen for this project are explained in the [test plan](https://docs.google.com/document/d/1Ou-1JZlrWx6WJ-L29_sXmF_nPpM8houTU3zPHOSHuWE/edit?usp=sharing), section "APPENDIX: Automation tools assessment"
+
+### Scenarios covered:
+The selection of scenarios to be automated was made based on the reasoning elaborated in the **priorities** section of the test strategy contained in the test plan.
+  
+Functional  
+##### Collections endpoint  
+- ###### Positive Scenarios:  
+
+  - GET all collections
+  - GET single collection    
+  - POST create collection
+  - PUT update collection  
+  - DEL delete collection  
