@@ -1,4 +1,9 @@
+target
+build
+bin
 .idea
 .gradle
-.target
-.build
+.settings
+.vscode
+.classpath
+.project
