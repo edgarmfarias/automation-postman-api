@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ParallelTestRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-23T16:24:25" hostname="Yalo-103.local" time="7.909">
+  <properties/>
+  <testcase name="postmanAPITest" classname="ParallelTestRunner" time="7.909"/>
+  <system-out><![CDATA[11:24:26.001 [Test worker] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @functional
+11:24:26.628 [Test worker] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+11:24:27.603 [pool-1-thread-2] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 3: classpath:notifications/functional/accounts/get-subscription-types.feature
+11:24:27.603 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 3: classpath:notifications/functional/accounts/post-bulk-notification.feature
+11:24:27.603 [pool-1-thread-3] INFO  com.intuit.karate.Runner - <<pass>> feature 3 of 3: classpath:notifications/functional/accounts/get-accounts.feature
+---------------------------------------------------------
+---------------------------------------------------------
+feature: classpath:notifications/functional/accounts/post-bulk-notification.feature
+feature: classpath:notifications/functional/accounts/get-subscription-types.feature
+---------------------------------------------------------
+report: target/reports/notifications.functional.accounts.post-bulk-notification.json
+report: target/reports/notifications.functional.accounts.get-subscription-types.json
+feature: classpath:notifications/functional/accounts/get-accounts.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 1.2117
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.6101
+report: target/reports/notifications.functional.accounts.get-accounts.json
+---------------------------------------------------------
+---------------------------------------------------------
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.6047
+---------------------------------------------------------
+
+HTML report: (paste into browser to view) | Karate version: 0.9.6
+file:/Users/edgar.farias/Desktop/codebase/qa-automation-platform/target/reports/karate-summary.html
+===================================================================
+
+Karate version: 0.9.6
+======================================================
+elapsed:   1.62 | threads:    5 | thread time: 2.43 
+features:     3 | ignored:    0 | efficiency: 0.30
+scenarios:    4 | passed:     4 | failed: 0
+======================================================
+
+]]></system-out>
+  <system-err><![CDATA[Warning: Nashorn engine is planned to be removed from a future JDK release
+]]></system-err>
+</testsuite>

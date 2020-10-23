@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>notifications.functional.collections.get-single-collection</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">0</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">1</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2020-10-23 10:06:02 AM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item failed">
+                        <a href="#[1:13]">[1:13] retrieve single collection </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">notifications/functional/collections/get-single-collection.feature</span><span class="feature-description">retrieve single collection given a uid</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:13]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">Functional</a><a class="badge badge-primary" href="karate-tags.html">CS2</a><a class="badge badge-primary" href="karate-tags.html">GetSingleCollection</a><a class="badge badge-primary" href="karate-tags.html">Collections</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [1:13]</span><span class="scenario-name">retrieve single collection </span>
+                        </div>
+                        <div class="scenario-time failed">ms: 738</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:13]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:13]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:13]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* configure headers = { X-Api-Key: #(apiKey) }</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:13]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* path 'collections'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:13]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-cell passed">* method get</div>
+                        </div>
+                        <div class="time-cell passed">736</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:13]bg">
+                        <div class="step-container" id="5">
+                            <div class="step-ref bg-step">5</div>
+                            <div class="step-cell failed">* status 200</div>
+                        </div>
+                        <div class="time-cell failed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">10:06:02.074 status code was: 404, expected: 200, response time: 558, url: https://api-staging2.yalochat.com/notifications/api/v1/collections, response: {"errors":{"detail":"Page not found"}}
+-unknown-:9 - status code was: 404, expected: 200, response time: 558, url: https://api-staging2.yalochat.com/notifications/api/v1/collections, response: {"errors":{"detail":"Page not found"}}</div>
+                    <div class="step-row" data-parent="[1:13]bg">
+                        <div class="step-container" id="6">
+                            <div class="step-ref bg-step">6</div>
+                            <div class="step-cell skipped">* def uid = response.collections[0].uid</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:13]bg">
+                        <div class="step-container" id="7">
+                            <div class="step-ref bg-step">7</div>
+                            <div class="step-cell skipped">* def name = response.collections[0].name</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref skipped">8</div>
+                            <div class="step-cell skipped">Given path 'collections', uid</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref skipped">9</div>
+                            <div class="step-cell skipped">When method get</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref skipped">10</div>
+                            <div class="step-cell skipped">Then status 200</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref skipped">11</div>
+                            <div class="step-cell skipped">And match response ==  { collection: { info: '#object', item: '#[] #object' } }</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref skipped">12</div>
+                            <div class="step-cell skipped">And match response.collection.info ==</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="12">{
+  _postman_id: '#uuid',
+  name: '#(name)',
+  description: '#string',
+  schema: '#regex http.+json$'
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref skipped">13</div>
+                            <div class="step-cell skipped">And match each response.collection.item contains</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="13">{
+  name: '#string',
+  item: '#[]',
+  _postman_id: '#uuid'
+}</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

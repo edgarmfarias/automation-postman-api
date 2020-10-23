@@ -1,0 +1,1 @@
+10:06:02.074 status code was: 404, expected: 200, response time: 558, url: https://api-staging2.yalochat.com/notifications/api/v1/collections, response: {"errors":{"detail":"Page not found"}}

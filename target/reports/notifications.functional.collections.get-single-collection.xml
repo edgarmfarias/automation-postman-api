@@ -1,0 +1,22 @@
+<testsuite failures="1" name="notifications/functional/collections/get-single-collection.feature" skipped="0" tests="1" time="0.738403">
+  <testcase classname="notifications.functional.collections.get-single-collection" name="retrieve single collection" time="0.738403">
+    <failure message="-unknown-:9 - status code was: 404, expected: 200, response time: 558, url: https://api-staging2.yalochat.com/notifications/api/v1/collections, response: {&quot;errors&quot;:{&quot;detail&quot;:&quot;Page not found&quot;}}">* url baseUrl ............................................................. passed
+* configure headers = { X-Api-Key: #(apiKey) } ............................ passed
+* path 'collections' ...................................................... passed
+* method get .............................................................. passed
+* status 200 .............................................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:9 - status code was: 404, expected: 200, response time: 558, url: https://api-staging2.yalochat.com/notifications/api/v1/collections, response: {"errors":{"detail":"Page not found"}}
+	at ✽.* status 200 (-unknown-:9)
+
+* def uid = response.collections[0].uid ................................... skipped
+* def name = response.collections[0].name ................................. skipped
+Given path 'collections', uid ............................................. skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response ==  { collection: { info: '#object', item: '#[] #object' } } . skipped
+And match response.collection.info == ..................................... skipped
+And match each response.collection.item contains .......................... skipped</failure>
+  </testcase>
+</testsuite>
